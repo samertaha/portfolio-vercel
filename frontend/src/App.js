@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get('https://portfolio-vercel-five.vercel.app/getProjects')
+      .get('/getProjects')
       .then((response) => {
         setProjects(response.data);
       })

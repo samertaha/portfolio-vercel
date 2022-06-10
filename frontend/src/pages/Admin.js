@@ -49,7 +49,7 @@ const Admin = ({ projects, setProjects }) => {
     event.preventDefault();
     console.log('samer ?! ', projectLiveUrlInput, projectFeaturedInput);
     axios
-      .post('https://samer-portfolio-zoro12.vercel.app/createProject', {
+      .post('/createProject', {
         name: projectNameInput,
         image: projectImageInput,
         skills: projectSkillsInput,
@@ -74,7 +74,7 @@ const Admin = ({ projects, setProjects }) => {
 
   const deleteProject = (id) => {
     axios
-      .delete(`https://samer-portfolio-zoro12.vercel.app/project/${id}`)
+      .delete(`/project/${id}`)
       .then((response) => {
         setProjects([...projects.filter((project) => project._id !== id)]);
       })
@@ -96,17 +96,14 @@ const Admin = ({ projects, setProjects }) => {
   const saveProject = () => {
     console.log(projectId);
     axios
-      .put(
-        `https://samer-portfolio-zoro12.vercel.app/updateProject/${projectId}`,
-        {
-          name: projectNameInput,
-          image: projectImageInput,
-          skills: projectSkillsInput,
-          github: projectGithubInput,
-          url: projectLiveUrlInput,
-          featured: projectFeaturedInput,
-        }
-      )
+      .put(`/updateProject/${projectId}`, {
+        name: projectNameInput,
+        image: projectImageInput,
+        skills: projectSkillsInput,
+        github: projectGithubInput,
+        url: projectLiveUrlInput,
+        featured: projectFeaturedInput,
+      })
       .then((response) => {
         let newProjects = [...projects];
         newProjects = newProjects.map((project) => {
