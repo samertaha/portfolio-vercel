@@ -65,6 +65,14 @@ function Navbar() {
                 admin
               </Link>
             </li>
+            <li>
+              <Link
+                to={{ pathname: 'https://github.com/zoro12/portfolio-vercel' }}
+                target='_blank'
+              >
+                github
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
