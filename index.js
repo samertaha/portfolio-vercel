@@ -12,10 +12,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
-app.get('/api/test', (req, res) => {
-  res.send('test');
-});
-
 mongoose.connect(
   'mongodb+srv://samertaha:5NqAeoPR@cluster0.ccilm2c.mongodb.net/portfolio'
 );
