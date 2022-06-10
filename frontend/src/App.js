@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get('https://samer-portfolio-zoro12.vercel.app/getProjects')
+      .get('https://samer-portfolio-us48waexc-zoro12.vercel.app/getProjects')
       .then((response) => {
         setProjects(response.data);
         console.log(response.data);
