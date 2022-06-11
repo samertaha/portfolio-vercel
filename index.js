@@ -3,7 +3,10 @@ const app = express();
 const mongoose = require('mongoose');
 const ProjectModel = require('./models/Projects');
 
-const path = require('path');
+let path = require('path');
+let filePath = './frontend/index.html';
+path = path.resolve(filePath);
+
 const logger = require('morgan');
 const cors = require('cors');
 
