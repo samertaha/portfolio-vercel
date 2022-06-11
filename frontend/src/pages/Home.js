@@ -39,7 +39,7 @@ function Home({ projects }) {
         <div className='text'>
           <div className='text-inner'>
             <h1>Samer Taha</h1>
-            <p>Junior FullStack Web developer</p>
+            <p>Appleseeds FullStack Bootcamp</p>
             <Link to='/contact' className='btn'>
               Contact Me
             </Link>
