@@ -6,15 +6,14 @@ const ProjectModel = require('./models/Projects');
 const path = require('path');
 const logger = require('morgan');
 const cors = require('cors');
+require('dotenv').config();
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
-mongoose.connect(
-  'mongodb+srv://samertaha:5NqAeoPR@cluster0.ccilm2c.mongodb.net/portfolio'
-);
+mongoose.connect(process.env.MONGODB_URL);
 
 app.get('/getProjects', (req, res) => {
   ProjectModel.find({}, (err, result) => {
