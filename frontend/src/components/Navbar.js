@@ -61,17 +61,9 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link onClick={() => toggleBtn.current.click()} to='/admin'>
-                admin
-              </Link>
-            </li>
-            <li>
-              <Link
-                to={{ pathname: 'https://github.com/zoro12/portfolio-vercel' }}
-                target='_blank'
-              >
+              <a target='_blank' href='https://github.com/zoro12'>
                 github
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
