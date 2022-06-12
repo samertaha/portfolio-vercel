@@ -38,28 +38,23 @@ function Home({ projects }) {
       <div className='wrapper'>
         <div className='text'>
           <div className='text-inner'>
-            <h1>Samer taha</h1>
+            <h1>Arie wolf</h1>
             <p>Appleseeds FullStack Bootcamp</p>
             <Link to='/contact' className='btn'>
               Contact Me
             </Link>
 
-            <div
-              class='badge-base LI-profile-badge'
-              data-locale='en_US'
-              data-size='medium'
-              data-theme='dark'
-              data-type='VERTICAL'
-              data-vanity='samer-taha-a688a8237'
-              data-version='v1'
-            >
-              <a
-                class='badge-base__link LI-simple-link'
-                href='https://il.linkedin.com/in/samer-taha-a688a8237?trk=profile-badge'
-              >
-                Samer Taha
+            {/* <div className='social'>
+              <a href='# '>
+                <i className='fa fa-facebook'></i>
               </a>
-            </div>
+              <a href='# '>
+                <i className='fa fa-twitter'></i>
+              </a>
+              <a href='# '>
+                <i className='fa fa-instagram'></i>
+              </a>
+            </div> */}
           </div>
         </div>
 
