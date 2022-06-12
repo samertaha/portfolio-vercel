@@ -38,7 +38,7 @@ function Home({ projects }) {
       <div className='wrapper'>
         <div className='text'>
           <div className='text-inner'>
-            <h1>Samer Taha</h1>
+            <h1>Arie wolf</h1>
             <p>Appleseeds FullStack Bootcamp</p>
             <Link to='/contact' className='btn'>
               Contact Me
