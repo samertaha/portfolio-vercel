@@ -44,17 +44,22 @@ function Home({ projects }) {
               Contact Me
             </Link>
 
-            {/* <div className='social'>
-              <a href='# '>
-                <i className='fa fa-facebook'></i>
+            <div
+              class='badge-base LI-profile-badge'
+              data-locale='en_US'
+              data-size='medium'
+              data-theme='dark'
+              data-type='VERTICAL'
+              data-vanity='samer-taha-a688a8237'
+              data-version='v1'
+            >
+              <a
+                class='badge-base__link LI-simple-link'
+                href='https://il.linkedin.com/in/samer-taha-a688a8237?trk=profile-badge'
+              >
+                Samer Taha
               </a>
-              <a href='# '>
-                <i className='fa fa-twitter'></i>
-              </a>
-              <a href='# '>
-                <i className='fa fa-instagram'></i>
-              </a>
-            </div> */}
+            </div>
           </div>
         </div>
 
