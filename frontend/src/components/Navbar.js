@@ -62,7 +62,7 @@ function Navbar() {
             </li>
             <li>
               <a target='_blank' href='https://github.com/zoro12'>
-                github
+                Github
               </a>
             </li>
           </ul>
