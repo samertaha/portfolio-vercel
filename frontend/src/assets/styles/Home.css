@@ -9,9 +9,7 @@
   padding: 15px 15px 15px 100px;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('https://res.cloudinary.com/samer-taha/image/upload/v1654765687/samer_luko0y.jpg')
-      no-repeat -10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   background-blend-mode: darken;
 }
 .text h1 {
